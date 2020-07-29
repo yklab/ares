@@ -1,3 +1,18 @@
-window.onload = function(){
-	console.log("感谢您的浏览，期待能够加入贵公司！我的 GitHub：https://github.com/hackhu2019");
+$(function() {
+    switchFixed()
+})
+
+function switchFixed (e) {
+	if($('#cb').is(':checked')) {
+		// 中文
+		$(".en").each(function(i, item) {
+            $(item).text(chinese[i]);
+        });
+	} else {
+		// 英文
+		$(".en").each(function(i, item) {
+                $(item).text(english[i]);
+            });
+	}
 }
+

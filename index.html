@@ -28,6 +28,11 @@
             document.getElementsByClassName('loading')[0].style.display = 'none';
         }
     </script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/chinese.js"></script>
+    <script type="text/javascript" src="./assets/js/english.js"></script>
+    
+    <script src="./assets/js/index.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -36,16 +41,8 @@
 
     <article class="container">
         <section class="side" id="side">
-
-
             <label class="switch" style="display: none;" onchange="switchFixed()">
-                <script type="text/javaScript">
-                    function switchFixed() {
-                    var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
-                    document.getElementById('side').style.position = value;
-                }
-            </script>
-                <input id="cb" type="checkbox">
+                <input id="cb" type="checkbox" checked>
                 <span class="slider round"></span>
             </label>
             <style>
@@ -124,24 +121,24 @@
                     <img class="avatar" src="assets/images/card.jpg">
                 </section>
 
-                <h1 class="name"><strong>意向岗位</strong></h1>
-                <h4 class="info-job"><strong>IT工程师 & 生物信息工程师</strong> </h4>
+                <h1 class="name"><strong class="en">意向岗位</strong></h1>
+                <h4 class="info-job"><strong class="en">IT工程师 & 生物信息工程师</strong> </h4>
 
             </section>
 
             <!-- 基本信息 -->
             <section class="profile info-unit">
                 <h2>
-                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                    <i class="fa fa-user" aria-hidden="true"></i><span class="en">基本信息</span></h2>
                 <hr />
                 <ul>
                     <li>
-                        <label>个人信息</label>
-                        <span>李运珂/ 男 / 1990-04</span>
+                        <label class="en">个人信息</label>
+                        <span class="en">李运珂/ 男 / 1990-04</span>
                     </li>
                     <li>
-                        <label>英语水平</label>
-                        <span>CET-4</span>
+                        <label class="en">英语水平</label>
+                        <span >CET-4</span>
                     </li>
 
                 </ul>
@@ -150,12 +147,12 @@
             <!-- 联系方式 -->
             <section class="contact info-unit">
                 <h2>
-                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i><span class="en">联系方式</span></h2>
                 <hr />
                 <ul>
                     <li>
                         <label><i class="fa fa-qq"></i></label>
-                        <a target="_blank">1316014512</a>
+                        <a target="_blank" >1316014512</a>
                     </li>
                     <li>
                         <label><i class="fa fa-envelope"></i></label>
@@ -163,7 +160,7 @@
                     </li>
                     <li>
                         <label><i class="fa fa-file-text-o"></i></label>
-                        <a href="https://yunkelab.com" target="_blank">李运珂的博客</a>
+                        <a href="https://yunkelab.com" target="_blank" class="en">李运珂的博客</a>
                     </li>
                     <li>
                         <label><i class="fa fa-github" aria-hidden="true"></i></label>
@@ -175,15 +172,15 @@
             <!-- 教育经历 -->
             <section class="edu info-unit">
                     <h2>
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i><span class="en">教育经历</span></h2>
                     <hr />
                     <ul>
                         <li>
                             <h3>
-                                <p>湖南农业大学 —— 本科</p>
-                                <p>专业：生物信息</p>
+                                <p class="en">湖南农业大学 —— 本科</p>
+                                <p class="en">专业：生物信息</p>
                             </h3>
-                            <time>时间：<mark> 2010.9-2014.6</mark></time>
+                            <time class="en">时间：<mark> 2010.9-2014.6</mark></time>
                         </li>
                     </ul>
                 </section>
@@ -191,7 +188,7 @@
             <!-- 个人技能 -->
             <section class="skill info-unit">
                 <h2>
-                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                    <i class="fa fa-code" aria-hidden="true"></i><span class="en">技能点</span></h2>
                 <hr/>
                 <ul>
                      <li>
@@ -235,17 +232,17 @@
             <!-- 专业能力 -->
             <section class="work info-unit">
                 <h2>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>专业能力</h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i><span class="en">专业能力</span></h2>
                 <hr />
-                <p> 熟悉各类生物信息流程，NGS测序原理。WGS/WES/单细胞/微生物流程。能够运用python、makeflow、nextflow等快速书写pipeline。
+                <p class="en"> 熟悉各类生物信息流程，NGS测序原理。WGS/WES/单细胞/微生物流程。能够运用python、makeflow、nextflow等快速书写pipeline。
                 </p>
-                <p>
+                <p class="en">
                     熟练Python/GO/latex/makeflow/nextflow/html等编程语言。
                 </p>
-                <p>
+                <p class="en">
                     熟练运用MySQL/MongDB/Redis等数据库。熟悉爬虫、网站建站等。
                 </p>
-                <p>
+                <p class="en">
                     熟练Linux系统，针对HPC服务器，了解软硬件运维。
                 </p>
             </section>
@@ -254,20 +251,20 @@
 
             <section class="project info-unit">
                 <h2>
-                    <i class="fa fa-paper-plane" aria-hidden="true"></i>工作经历</h2>
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i><span class="en">工作经历</span></h2>
                 <hr />
                 <ul>
                     <li>
                         <h3>
-                            <span>【实习】：深圳华大基因</span>
+                            <span class="en">【实习】：深圳华大基因</span>
                             <time>2013.11-2014.5</time>
                         </h3>
                         <ul class="info-content">
                             <li><i class="fa fa-users" aria-hidden="true"></i>
-                                [工作岗位]：生物信息工程师
+                                <span class="en">[工作岗位]：生物信息工程师</span>
                             </li>
                             <li><i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [参与项目]：16S流程书写、微生物pipeline、监控流程。
+                                <span class="en">[参与项目]：16S流程书写、微生物pipeline、监控流程。</span>
                             </li>
                             <li>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -438,7 +435,6 @@
         </section>
     </article>
 
-
     <!-- <footer class="footer">
         <p> <b>感谢您花时间阅读我的简历，期待能有机会和您共事。</b> </p>
     </footer> -->
@@ -455,7 +451,6 @@
         </ul>
     </aside> -->
 
-    <script src="./assets/js/index.js" type="text/javascript"></script>
 
 </body>
 

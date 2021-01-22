@@ -20,7 +20,17 @@ var english = [
 "Experience",
 "【Internship】：BGI shenzhen.",
 "[Position]: Bioinformatics Engineer",
-"[Project]: 16S process writing, Microbial pipeline, Monitoring process."
-
+"[Project]: 16S process writing, Microbial pipeline, Monitoring process.",
+"[Project work]",
+"1. Automated 16S from raw data to HTML reports.",
+"2. The results of microbiological assembly were reported.",
+"3. Resource usage information is generated for the process to optimize the process.",
+"[Work] Capitalbio beijing",
+"[Position]: Bioinformatics Engineer",
+"[Project]: WES Data analysis.",
+"[Project work]",
+"1. Automatic WES process.",
+"2. Building bioinformatics database and automatic annotation.",
+"3. Visual report."
 
 ];
